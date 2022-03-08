@@ -1,35 +1,32 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
-function Book() {
+const Book = () => {
+  const books = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
+  const deleteBookFromStore = (id) => {
+    dispatch(removeBook(id));
+  };
   return (
-    <div className="books">
-      <div className="info">
-        <h1>Book</h1>
-        <span>Author</span>
-
-        <ul>
-          <li>
-            <button key="btn-comment" type="button">Comments</button>
+    <div>
+      <ul className="Books">
+        {books.map(({ id, title, author }) => (
+          <li key={id}>
+            <span>
+              {title}
+              {' '}
+            </span>
+            <span>
+              {author}
+              {' '}
+            </span>
+            <button type="button" onClick={() => deleteBookFromStore(id)}>Remove</button>
           </li>
-          <li>
-            <button key="btn-remove" type="button">Remove</button>
-          </li>
-          <li>
-            <button key="btn-edit" type="button">Edit</button>
-          </li>
-        </ul>
-      </div>
-      <div className="progress-chart">
-        <span>85%</span>
-        <span>completed</span>
-      </div>
-      <div className="view-progress">
-        <span>Current chapter</span>
-        <h3>Chapter 17</h3>
-        <button type="button">Update progress</button>
-      </div>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default Book;
