@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Books from './redux/books/books';
+import Books from './components/BookCom';
 
 function App() {
   return (
