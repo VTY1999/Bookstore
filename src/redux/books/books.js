@@ -47,8 +47,7 @@ export const fetchBook = () => async (dispatch) => {
     'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/kQDJnBa8pVnQ9r9R8wZR/books',
   );
   const result = await response.json();
-  const loadData = Object.entries(result);
-  loadData.map(([key, value]) => {
+  const loadData = Object.entries(result).map(([key, value]) => {
     const { title, category } = value[0];
     return {
       item_id: key,
