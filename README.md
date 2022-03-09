@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/VTY1999)
 - Twitter: [@twitterhandle](https://twitter.com/verissimoty?s=09)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-verissimo-b5b4521b1/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-o-verissimo/)
 
 ## 🤝 Contributing
 
