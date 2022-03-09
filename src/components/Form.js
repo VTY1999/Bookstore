@@ -20,7 +20,7 @@ const Form = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: inputText.title,
       author: inputText.author,
       category: inputText.category,
