@@ -2,7 +2,7 @@
 
 # Bookstore App
 
-> Bookstore is a website that allows you to display a list of books. You can add a book and remove a selected book.
+> Bookstore is a single page website that allows you to display a list of books built with React and redux . You can add new books and remove any selected book.
 
 ![Screenshot](https://github.com/VTY1999/Bookstore/blob/styling/src/Images/Screenshot%20(118).png)
 
