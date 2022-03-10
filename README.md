@@ -2,7 +2,9 @@
 
 # Bookstore App
 
-> Description the project.
+> Bookstore is a website that allows you to display a list of books. You can add a book and remove a selected book.
+
+![Screenshot](https://github.com/VTY1999/Bookstore/blob/styling/src/Images/Screenshot%20(118).png)
 
 ## Built With
 

@@ -36,9 +36,10 @@ const Form = () => {
 
   return (
     <form className="addform" onSubmit={submitHandler}>
-      <input name="title" type="text" placeholder="Book title" value={inputText.title} onChange={changeHandler} />
-      <input name="author" type="text" placeholder="Author" value={inputText.author} onChange={changeHandler} />
-      <select name="category" onChange={changeHandler} value={inputText.category}>
+      <div className="formhead">ADD NEW BOOK</div>
+      <input className="Btitle" name="title" type="text" placeholder="Book title" value={inputText.title} onChange={changeHandler} />
+      <select className="Bcategory" name="category" onChange={changeHandler} value={inputText.category}>
+        <option>Category</option>
         <option>Action</option>
         <option>Historical</option>
         <option>Thriller</option>
@@ -47,7 +48,7 @@ const Form = () => {
         <option>Romance</option>
       </select>
 
-      <button value="Add book" type="submit">Add Book</button>
+      <button className="btn" value="Add book" type="submit">Add Book</button>
     </form>
   );
 };
