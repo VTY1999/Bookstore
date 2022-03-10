@@ -5,8 +5,9 @@ import Book from './Book';
 function Books() {
   return (
     <div>
-      <Form />
       <Book />
+      <hr />
+      <Form />
     </div>
   );
 }
